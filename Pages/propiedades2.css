@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#grid-area {
+    display: grid;
+    grid-template-areas: 
+    "menu titulo titulo titulo"
+    "menu imagen-central imagen-central imagen-central"
+    "menu imagen-central imagen-central imagen-central"
+    "subtitulo subtitulo subtitulo subtitulo"
+    "texto texto multimedia multimedia"
+    "footer footer footer footer";
+    gap: 5px;
+    height: 50vh;
+    
+
+}
+
+
+header{
+    grid-area: titulo;
+    background-color: #25e2d5;
+    font-family:'Montserrat', sans-serif ;
+}
+.titulo1{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+    margin-top: -10%;
+}
+.logo{
+    width: 15%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+nav {
+    grid-area: menu;
+    background-color: aquamarine;
+
+}
+#menu li a  {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(5, 128, 117);
+    margin-top: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+ul#menu li a :hover{
+    background-color: white;
+}
+
+.imagen-central{
+    grid-area: imagen-central;
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    grid-template-columns: 1/4;
+}
+#subtitulo {
+    grid-area: subtitulo;
+    font-family:'Montserrat', sans-serif ;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: gray;
+}
+#texto{
+    grid-area: texto;
+    background: linear-gradient(to right, rgb(4, 155, 155), aqua);
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#multimedia {
+    grid-area: multimedia;
+    width: 50%;
+    height: auto;
+}
+footer{
+    grid-area:footer;
+    background-color: #25e2d5;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+@media (max-width: 768px){
+    #grid-area{
+        display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "menu menu menu menu"
+    "imagen-central imagen-central imagen-central imagen-central"
+    "subtitulo subtitulo subtitulo subtitulo"
+    "texto texto texto texto"
+    "multimedia multimedia multimedia multimedia"
+    "footer footer footer footer";
+    }
+}
+
+
+
+
