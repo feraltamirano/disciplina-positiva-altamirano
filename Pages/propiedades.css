@@ -3,49 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
+
+#encabezado {
+    display: flex;
     background-color: #25e2d5;
 }
 #logo {
-    padding: 10px;
-    margin: 5% 60% 1% 20%; 
+    padding: 5%;
+    margin: 0; 
+    width: 100px;
+    height: auto;
 }
 #titulo {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 2em;
     text-align: center;
-    margin-top: -120px;
+    margin-top: 5%;
+    align-items: center;
+    justify-items: center;
 }
-ul.menu{
-    list-style: none;
-    margin: 5% 20%;
-    padding: 20px;
-    background-color: rgb(5, 150, 150);
+.portada-texto {
+    background-image: url(../assets/portada\ dp.png);
+    background-repeat: no-repeat;
+    width: 100%; 
     
-
 }
-li{
-    display: inline;
+h2.texo-img {
     color: white;
-    font-family: 'Roboto', sans-serif;
-}
-a{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-
-}
-ul.menu li a:hover {
-    background-color: aquamarine;}
-.imgCentral {
-    height: auto;
-    width: 80%;
-    border-radius: 15%;
-    margin: -40px 10% 5px 10% 
-    
+    text-transform: inherit;
+    text-shadow: black;
 }
 h1.tituloSeccion {
     font-family: 'Montserrat', sans-serif;
