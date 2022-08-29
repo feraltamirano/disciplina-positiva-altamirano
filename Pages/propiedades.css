@@ -11,7 +11,7 @@
 #logo {
     padding: 5%;
     margin: 0; 
-    width: 100px;
+    width: 20%;
     height: auto;
 }
 #titulo {
@@ -19,48 +19,53 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
     align-items: center;
     justify-items: center;
 }
-.portada-texto {
-    background-image: url(../assets/portada\ dp.png);
-    background-repeat: no-repeat;
-    width: 100%; 
+.portada-main {
+    display: grid;
+    grid-template-areas:
+    "img img" 
+    "texto texto"
+    "parrafo multimedia";
+    gap: 5px;
     
-}
-h2.texo-img {
-    color: white;
-    text-transform: inherit;
-    text-shadow: black;
-}
-h1.tituloSeccion {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(2, 87, 87);
-    text-align: center;
-}
-h2.subtituloSeccion {
-    width: 100%;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: black;
-    margin: 20px;
 
 }
-h3.descripcion {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
+.img-main {
+    max-width: 100%;
+    height: auto;
+    grid-area: img;
 }
+.texo-main {
+    background: linear-gradient(to right, #25e2d5, #b5f014);
+    color: white;
+    max-width: 100%;
+    grid-area: texto;
+    }
+.parrafo-main {
+    grid-area: parrafo;
+    width: auto;
+    height: 20em;
+    background: linear-gradient(to right, #25e2d5, #b5f014);
+    color: white;
+    text-align: center;
+    
+}
+.multimedia-main {
+    justify-content: center;
+    max-width: 100%;
+    height: 20em;
+    grid-area: multimedia;
+    }
+ 
 
 footer {
     text-align: center;
     color: white;
     background-color: rgb(6, 187, 187);
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5%;
 }
 .flex-conteiner {
     display: flex;
@@ -70,7 +75,9 @@ footer {
     width: auto;
     align-content: space-around;
 }
-.flex-conteiner .flex-texto {   
+.flex-conteiner
+
+.flex-texto {   
     align-items: flex-start;
 
 }
@@ -78,3 +85,15 @@ footer {
     align-items: flex-end;
 
 }
+@media (max-width: 768px) {
+    .portada-main {
+        display: grid;
+        grid-template-areas:
+        "img" 
+        "texto"
+        "parrafo" 
+        "multimedia";
+        gap: 5px;}
+}
+    
+        
