@@ -43,6 +43,7 @@
     color: white;
     max-width: 100%;
     grid-area: texto;
+    text-shadow: 2px 1px 1px gray;
     }
 .parrafo-main {
     grid-area: parrafo;
@@ -51,6 +52,7 @@
     background: linear-gradient(to right, #25e2d5, #b5f014);
     color: white;
     text-align: center;
+    text-shadow: 2px 1px 1px gray;
     
 }
 .multimedia-main {
@@ -67,24 +69,41 @@ footer {
     background-color: rgb(6, 187, 187);
     font-family: Arial, Helvetica, sans-serif;
 }
-.flex-conteiner {
-    display: flex;
-    background: linear-gradient(to right, rgb(4, 155, 155), aqua);
-    flex-direction: row;
+.conteiner-cursos {
+    display: grid;
+    grid-template-areas: 
+    "titulod imgd"
+    "listad imgd"
+    "imgf titulof"
+    "imgf listaf";
+}
+#titulo-d {
+    grid-area: titulod;
+    height: 20%;
+}
+#lista-d {
+    grid-area: listad;
+}
+#img-d {
+    grid-area: imgd;
     height: auto;
-    width: auto;
-    align-content: space-around;
+    width: 100%;
+    border-radius: 5%;
 }
-.flex-conteiner
-
-.flex-texto {   
-    align-items: flex-start;
-
+#titulo-flia {
+    grid-area: titulof;
 }
-.flex-conteiner .flex-multimedia {
-    align-items: flex-end;
-
+#lista-flia {
+    grid-area: listaf;
 }
+#img-f {
+    grid-area: imgf;
+    height: auto;
+    width: 100%;
+    border-radius: 5%
+}
+
+
 @media (max-width: 768px) {
     .portada-main {
         display: grid;
