@@ -39,7 +39,7 @@
     grid-area: img;
 }
 .texo-main {
-    background: linear-gradient(to right, #25e2d5, #b5f014);
+    background: linear-gradient(to right, #25e2d5, #14f070);
     color: white;
     max-width: 100%;
     grid-area: texto;
@@ -48,17 +48,18 @@
 .parrafo-main {
     grid-area: parrafo;
     width: auto;
-    height: 20em;
-    background: linear-gradient(to right, #25e2d5, #b5f014);
+    height: 100%;
+    background: linear-gradient(to right, #25e2d5, #14f070);
     color: white;
     text-align: center;
     text-shadow: 2px 1px 1px gray;
+    padding-top: 20%;
     
 }
 .multimedia-main {
     justify-content: center;
     max-width: 100%;
-    height: 20em;
+    height: 100%;
     grid-area: multimedia;
     }
  
@@ -69,6 +70,18 @@ footer {
     background-color: rgb(6, 187, 187);
     font-family: Arial, Helvetica, sans-serif;
 }
+.redes {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    align-content: center;
+    justify-content: center;
+}
+.icono {
+    color: white;
+    padding-right: 2%;
+}
+
 .conteiner-cursos {
     display: grid;
     grid-template-areas: 
@@ -76,13 +89,21 @@ footer {
     "listad imgd"
     "imgf titulof"
     "imgf listaf";
+    gap: 5px;
 }
 #titulo-d {
     grid-area: titulod;
-    height: 20%;
+    height: auto;
+    width: 100%;
+    border-radius: 25px 25px 0 25px;
+    box-shadow: 3px 3px 3px grey;
+    text-align: right;
+    padding: 5px;
+    font-size: 3em;
 }
 #lista-d {
     grid-area: listad;
+    font-size-adjust: 2em;
 }
 #img-d {
     grid-area: imgd;
@@ -92,6 +113,10 @@ footer {
 }
 #titulo-flia {
     grid-area: titulof;
+    height: auto;
+    width: 100%;
+    border-radius: 25px 25px 25px 0;
+    box-shadow: 3px 3px 3px grey;
 }
 #lista-flia {
     grid-area: listaf;
@@ -104,11 +129,14 @@ footer {
 }
 .nosotros-card {
     box-shadow: 5px 5px 3px grey;
+    margin-top: 5px;
 }
 .staff {
     gap: 2%;
     justify-content: center;
-    margin-bottom: 5%;
+    padding: 5px;
+    background: linear-gradient(to bottom, #25e2d5, #14f070);
+    width: 100%;
 }
 .img-staff {
     border-radius: 20% 0 20% 0;
@@ -144,7 +172,21 @@ footer {
     color: #25d366;
     transform: rotate(360deg);
 }
+.formulario{
+    padding: 5px;
+    margin: 10px 5px 5px 5px;
+    background: linear-gradient(to bottom, #25e2d5, #14f070);
+    border-radius: 0 25px 25px 25px;
+}
+.titulo-formulario {
+    margin: 20px;
+    padding: 3px;
+    height: auto;
+    width: 90%;
+    border-radius: 25px 25px 25px 0;
+    box-shadow: 3px 3px 3px grey;
 
+}
 
 @media (max-width: 768px) {
     .portada-main {
@@ -163,4 +205,39 @@ footer {
         height:63px;
         line-height: 66px;
 	}
+}
+@media (max-width:768px) {
+    .conteiner-cursos {
+        display: grid;
+        grid-template-areas: 
+        "titulod"
+        "imgd"
+        "listad"
+        "titulof"
+        "imgf"
+        "listaf";
+        gap: 5px;
+    }
+    #titulo-d{
+        margin: 10px;
+        font-size: 2em;
+        border-radius: 25px 25px 0 25px;      
+    }
+    #img-d{
+        border-radius: 15% 0 15% 15%;
+        margin: 10px;
+    }
+    #lista-d{
+        font-size: 0.8em;
+    }
+    #titulof{
+        font-size: 2em;
+        margin: 10px;
+    }
+    #img-f{
+        border-radius: 0 15% 15% 15%;
+    }
+    #listaf{
+        font-size: 0.8em;
+    }
 }
