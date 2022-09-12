@@ -1,0 +1,75 @@
+@import "vars"
+header{
+        #encabezado {
+        display: flex;
+        background-color: $color-main;        
+    }
+        #logo{
+            padding: 5%;
+            margin: 0; 
+            width: 20%;
+            height: auto
+        }
+        #titulo{
+            color: white;
+            font-family: $fuente-titulo;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 7%;
+            align-items: center;
+            justify-items: center;
+        }
+}
+.portada-main{
+    display: grid;
+    grid-template-areas:
+    "img img" 
+    "texto texto"
+    "parrafo multimedia";
+    gap: 5px;
+    .img-main{
+        max-width: 100%;
+        height: auto;
+        grid-area: img;
+    }
+    .texto-main{
+        background: $bg-main;
+        color: white;
+        max-width: 100%;
+        grid-area: texto;
+        text-shadow: 2px 1px 1px gray;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .parrafo-main{
+        grid-area: parrafo;
+        width: auto;
+        height: 100%;
+        background: linear-gradient(to right, #25e2d5, #14f070);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 1px 1px gray;
+        padding-top: 20%;
+    }
+    .multimedia-main{
+        justify-content: center;
+        max-width: 100%;
+        height: 100%;
+        grid-area: multimedia;
+    }
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(6, 187, 187);
+    font-family: Arial, Helvetica, sans-serif;
+    .redes {
+        display: flex;
+        flex-direction: row;
+        font-size: 2em;
+        align-content: center;
+        justify-content: center;
+        .icono {
+            padding-right: 2%;
+        }
+    }
+}

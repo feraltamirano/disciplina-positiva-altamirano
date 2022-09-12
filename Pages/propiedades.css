@@ -38,7 +38,7 @@
     height: auto;
     grid-area: img;
 }
-.texo-main {
+.texto-main {
     background: linear-gradient(to right, #25e2d5, #14f070);
     color: white;
     max-width: 100%;
