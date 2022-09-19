@@ -1,0 +1,25 @@
+header{
+    .menu-dp {
+        background-color: $color-main;
+    }
+    #encabezado {
+    display: flex;
+    background-color: $color-main;        
+}
+    #logo{
+        padding: 5%;
+        margin: 0; 
+        width: 20%;
+        height: auto
+    }
+    #titulo{
+        color: white;
+        font-family:$fuente-titulo;
+        font-weight: 700;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 7%;
+        align-items: center;
+        justify-items: center;
+    }
+}

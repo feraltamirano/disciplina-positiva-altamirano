@@ -1,3 +1,6 @@
+header .menu-dp {
+  background-color: #25e2d5;
+}
 header #encabezado {
   display: flex;
   background-color: #25e2d5;
@@ -11,7 +14,8 @@ header #logo {
 header #titulo {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
+  font-weight: 700;
+  font-size: 3em;
   text-align: center;
   margin-top: 7%;
   align-items: center;
@@ -45,6 +49,7 @@ header #titulo {
   text-align: center;
   text-shadow: 2px 1px 1px gray;
   padding-top: 20%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .portada-main .multimedia-main {
   justify-content: center;
@@ -53,10 +58,116 @@ header #titulo {
   grid-area: multimedia;
 }
 
+.cursos {
+  background-color: #25e2d5;
+  color: white;
+}
+.cursos .cursos-titulo {
+  background-color: linear-gradient(to right, #25e2d5, #14f070);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.cursos .cursos-titulo .cursos-parrafo {
+  text-align: center;
+}
+
+.conteiner-cursos {
+  display: grid;
+  grid-template-areas: "titulod imgd" "listad imgd" "imgf titulof" "imgf listaf";
+  gap: 5px;
+}
+
+#titulo-d, #titulo-flia {
+  grid-area: titulod;
+  height: auto;
+  width: 100%;
+  box-shadow: 3px 3px 3px grey;
+  text-align: right;
+  padding: 5px;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 15px 15px 0 15px;
+}
+
+#lista-d {
+  grid-area: listad;
+  font-size: 2em;
+}
+
+#img-d {
+  grid-area: imgd;
+  height: auto;
+  width: 100%;
+  border-radius: 15% 15% 15% 0;
+}
+
+#titulo-flia {
+  border-radius: 0 15px 15px 15px;
+  grid-area: titulof;
+}
+
+#lista-flia {
+  grid-area: listaf;
+  font-size: 2em;
+}
+
+#img-f {
+  grid-area: imgf;
+  height: auto;
+  width: 100%;
+  border-radius: 15% 0 15% 15%;
+}
+
+.nosotros-card {
+  box-shadow: 5px 5px 3px grey;
+  margin-top: 5px;
+}
+
+.staff {
+  gap: 2%;
+  justify-content: center;
+  padding: 5px;
+  background: linear-gradient(to bottom, #25e2d5, #14f070);
+  width: 100%;
+}
+
+.img-staff {
+  border-radius: 20% 0 20% 0;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.nombre-staff {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.cv-staff {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.formulario {
+  padding: 5px;
+  margin: 10px 5px 5px 5px;
+  background: linear-gradient(to bottom, #25e2d5, #14f070);
+  border-radius: 0 25px 25px 25px;
+}
+
+.titulo-formulario {
+  margin: 20px;
+  padding: 3px;
+  height: auto;
+  width: 90%;
+  border-radius: 25px 25px 25px 0;
+  box-shadow: 3px 3px 3px grey;
+}
+
 footer {
   text-align: center;
   color: white;
-  background-color: rgb(6, 187, 187);
+  background-color: #25e2d5;
   font-family: Arial, Helvetica, sans-serif;
 }
 footer .redes {
@@ -68,4 +179,83 @@ footer .redes {
 }
 footer .redes .icono {
   padding-right: 2%;
+  color: white;
+}
+
+#btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+#btn-wsp:hover {
+  background: white;
+  color: #25d366;
+  transform: rotate(360deg);
+}
+
+@media (max-width: 480px) {
+  #logo {
+    padding: 1%;
+    margin: 0;
+    width: 30%;
+    height: auto;
+  }
+  #titulo {
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .portada-main {
+    display: grid;
+    grid-template-areas: "img" "texto" "parrafo" "multimedia";
+    gap: 5px;
+  }
+}
+@media (min-width: 768px) {
+  #btn-wsp {
+    display: none;
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
+}
+@media (max-width: 768px) {
+  .conteiner-cursos {
+    display: grid;
+    grid-template-areas: "titulod" "imgd" "listad" "titulof" "imgf" "listaf";
+    gap: 5px;
+  }
+  #titulo-d, #titulo-flia {
+    margin: 10px;
+    font-size: 2em;
+    border-radius: 25px 25px 0 25px;
+  }
+  #img-d {
+    border-radius: 15% 0 15% 15%;
+    margin: 10px;
+  }
+  #lista-d {
+    font-size: 0.8em;
+  }
+  #titulof {
+    font-size: 2em;
+    margin: 10px;
+  }
+  #img-f {
+    border-radius: 0 15% 15% 15%;
+  }
+  #listaf {
+    font-size: 0.8em;
+  }
 }/*# sourceMappingURL=main.css.map */

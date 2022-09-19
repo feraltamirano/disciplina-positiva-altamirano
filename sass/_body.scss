@@ -1,88 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#encabezado {
-    display: flex;
-    background-color: #25e2d5;
-}
-#logo {
-    padding: 5%;
-    margin: 0; 
-    width: 20%;
-    height: auto;
-}
-#titulo {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 7%;
-    align-items: center;
-    justify-items: center;
-}
-.portada-main {
+.portada-main{
     display: grid;
     grid-template-areas:
     "img img" 
     "texto texto"
     "parrafo multimedia";
     gap: 5px;
-    
-
-}
-.img-main {
-    max-width: 100%;
-    height: auto;
-    grid-area: img;
-}
-.texto-main {
-    background: linear-gradient(to right, #25e2d5, #14f070);
-    color: white;
-    max-width: 100%;
-    grid-area: texto;
-    text-shadow: 2px 1px 1px gray;
-    font-family: 'Montserrat', sans-serif;
+    .img-main{
+        max-width: 100%;
+        height: auto;
+        grid-area: img;
     }
-.parrafo-main {
-    grid-area: parrafo;
-    width: auto;
-    height: 100%;
-    background: linear-gradient(to right, #25e2d5, #14f070);
-    color: white;
-    text-align: center;
-    text-shadow: 2px 1px 1px gray;
-    padding-top: 20%;
-    
-}
-.multimedia-main {
-    justify-content: center;
-    max-width: 100%;
-    height: 100%;
-    grid-area: multimedia;
+    .texto-main{
+        background: $bg-main;
+        color: white;
+        max-width: 100%;
+        grid-area: texto;
+        text-shadow: 2px 1px 1px gray;
+        font-family: $fuente-titulo;
     }
- 
-
-footer {
-    text-align: center;
-    color: white;
-    background-color: rgb(6, 187, 187);
-    font-family: Arial, Helvetica, sans-serif;
+    .parrafo-main{
+        grid-area: parrafo;
+        width: auto;
+        height: 100%;
+        background: linear-gradient(to right, #25e2d5, #14f070);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 1px 1px gray;
+        padding-top: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .multimedia-main{
+        justify-content: center;
+        max-width: 100%;
+        height: 100%;
+        grid-area: multimedia;
+    }
 }
-.redes {
-    display: flex;
-    flex-direction: row;
-    font-size: 2em;
-    align-content: center;
-    justify-content: center;
-}
-.icono {
-    color: white;
-    padding-right: 2%;
-}
-
+.cursos{
+    background-color: map-get($colores,principal);
+    color: map-get($colores,texto);
+        .cursos-titulo{
+            @include titulo;            
+        .cursos-parrafo{
+            text-align: center;
+            }
+        }
+                
+    }
 .conteiner-cursos {
     display: grid;
     grid-template-areas: 
@@ -96,12 +60,13 @@ footer {
     grid-area: titulod;
     height: auto;
     width: 100%;
-    border-radius: 25px 25px 0 25px;
     box-shadow: 3px 3px 3px grey;
     text-align: right;
     padding: 5px;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 15px 15px 0 15px;
 }
 #lista-d {
     grid-area: listad;
@@ -114,13 +79,9 @@ footer {
     border-radius: 15% 15% 15% 0;
 }
 #titulo-flia {
+    @extend #titulo-d;
+    border-radius: 0 15px 15px 15px;
     grid-area: titulof;
-    height: auto;
-    width: 100%;
-    border-radius: 25px 25px 25px 0;
-    box-shadow: 3px 3px 3px grey;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
 }
 #lista-flia {
     grid-area: listaf;
@@ -172,4 +133,3 @@ footer {
     box-shadow: 3px 3px 3px grey;
 
 }
-

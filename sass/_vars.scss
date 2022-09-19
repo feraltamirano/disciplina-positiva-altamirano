@@ -1,0 +1,15 @@
+$color-main:#25e2d5;
+$bg-main: linear-gradient(to right, #25e2d5, #14f070);
+$fuente-titulo: 'Montserrat', sans-serif;
+$colores:(
+    principal:#25e2d5,
+    secundario: aqua,
+    texto: white,
+);
+@mixin titulo {
+    background-color: $bg-main;
+    font-family: $fuente-titulo;
+    font-weight: 600;
+    text-align: center;
+    
+}

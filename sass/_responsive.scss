@@ -1,0 +1,69 @@
+@media (max-width: 480px){
+    #logo {
+        padding: 1%;
+        margin: 0;
+        width: 30%;
+        height: auto;
+    }
+    #titulo {
+        font-size: 2em;
+    }
+}
+   
+
+@media (max-width: 768px) {
+    .portada-main {
+        display: grid;
+        grid-template-areas:
+        "img" 
+        "texto"
+        "parrafo" 
+        "multimedia";
+        gap: 5px;
+        
+    }
+ 
+}
+@media (min-width:768px){
+    #btn-wsp{
+        display: none;
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+@media (max-width:768px) {
+    .conteiner-cursos {
+        display: grid;
+        grid-template-areas: 
+        "titulod"
+        "imgd"
+        "listad"
+        "titulof"
+        "imgf"
+        "listaf";
+        gap: 5px;
+    }
+    #titulo-d{
+        margin: 10px;
+        font-size: 2em;
+        border-radius: 25px 25px 0 25px;      
+    }
+    #img-d{
+        border-radius: 15% 0 15% 15%;
+        margin: 10px;
+    }
+    #lista-d{
+        font-size: 0.8em;
+    }
+    #titulof{
+        font-size: 2em;
+        margin: 10px;
+    }
+    #img-f{
+        border-radius: 0 15% 15% 15%;
+    }
+    #listaf{
+        font-size: 0.8em;
+    }
+}
