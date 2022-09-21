@@ -63,20 +63,18 @@ header .bg-menu .text-menu {
   grid-area: parrafo;
   width: auto;
   height: 100%;
-  color: rgb(63, 61, 61);
+  background: linear-gradient(to right, #25e2d5, #14f070);
+  color: white;
   text-align: center;
-  padding-top: 10%;
-  margin-top: -9px;
-  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 1px 1px gray;
+  padding-top: 20%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .portada-main .multimedia-main {
   justify-content: center;
   max-width: 100%;
   height: 100%;
   grid-area: multimedia;
-  margin-top: -9px;
-  border-radius: 15%;
-  box-shadow: 3px 3px 3px grey;
 }
 
 .cursos {
@@ -144,25 +142,6 @@ header .bg-menu .text-menu {
 .nosotros-card {
   box-shadow: 5px 5px 3px grey;
   margin-top: 5px;
-}
-
-.seccion-staff {
-  background-color: #25e2d5;
-}
-.seccion-staff .staff-titulo {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: 500;
-  text-align: center;
-}
-
-#staff-parrafo {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: -1px;
 }
 
 .staff {
@@ -275,9 +254,7 @@ footer .redes .icono {
     margin: 10px;
   }
   #lista-d {
-    font-size: 1.5em;
-    text-align: center;
-    list-style: none;
+    font-size: 0.8em;
   }
   #titulof {
     font-size: 2em;
@@ -286,10 +263,8 @@ footer .redes .icono {
   #img-f {
     border-radius: 0 15% 15% 15%;
   }
-  #lista-flia {
-    font-size: 1.5em;
-    text-align: center;
-    list-style: none;
+  #listaf {
+    font-size: 0.8em;
   }
 }
 @media (max-width: 768px) {

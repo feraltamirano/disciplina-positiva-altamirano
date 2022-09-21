@@ -1,16 +1,3 @@
-@media (max-width: 480px){
-    #logo {
-        padding: 1%;
-        margin: 0;
-        width: 30%;
-        height: auto;
-    }
-    #titulo {
-        font-size: 2em;
-    }
-}
-   
-
 @media (max-width: 768px) {
     .portada-main {
         display: grid;
@@ -22,7 +9,6 @@
         gap: 5px;
         
     }
- 
 }
 @media (min-width:768px){
     #btn-wsp{
@@ -54,7 +40,9 @@
         margin: 10px;
     }
     #lista-d{
-        font-size: 0.8em;
+        font-size: 1.5em;
+        text-align: center;
+        list-style: none;
     }
     #titulof{
         font-size: 2em;
@@ -63,7 +51,27 @@
     #img-f{
         border-radius: 0 15% 15% 15%;
     }
-    #listaf{
-        font-size: 0.8em;
+    #lista-flia{
+        font-size: 1.5em;
+        text-align: center;
+        list-style: none;
+    }
+}
+@media (max-width:768px){
+    header #logo{
+        padding: 0;
+        margin: 0; 
+        width: 30%;
+        height: auto       
+    }
+    header #titulo{
+        color: white;
+        font-family:$fuente-titulo;
+        font-weight: 600;
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 11%;
+        align-items: center;
+        justify-items: center;
     }
 }

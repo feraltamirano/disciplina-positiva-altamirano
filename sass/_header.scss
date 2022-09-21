@@ -1,20 +1,30 @@
 header{
-    .menu-dp {
+    .bg-menu {
         background-color: $color-main;
+        .text-menu{
+            color: white;
+            text-decoration: none;
+            font-family: $fuente-titulo;
+            font-weight: 500;
+            padding: 5px;
+            align-items: center;
+        }
+        }
+        
     }
     #encabezado {
     display: flex;
     background-color: $color-main;        
 }
-    #logo{
+     #logo {
         padding: 5%;
-        margin: 0; 
+        margin: 0;
         width: 20%;
-        height: auto
-    }
-    #titulo{
+        height: auto;
+        }
+     #titulo {
         color: white;
-        font-family:$fuente-titulo;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 3em;
         text-align: center;
@@ -22,4 +32,4 @@ header{
         align-items: center;
         justify-items: center;
     }
-}
+
