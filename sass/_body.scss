@@ -19,6 +19,7 @@
         text-shadow: 2px 1px 1px gray;
         font-family: $fuente-titulo;
         font-weight: 600;
+        border-radius: 0 50px 50px 0;
     }
     .parrafo-main{
         grid-area: parrafo;
@@ -37,11 +38,12 @@
         height: 100%;
         grid-area: multimedia;
         margin-top: -9px;
-        border-radius: 15%;
         box-shadow: 3px 3px 3px grey;
     }
 }
 .cursos{
+    display: flex;
+    flex-direction: column;
     background-color: map-get($colores,principal);
     color: map-get($colores,texto);
         .cursos-titulo{
@@ -67,7 +69,7 @@
     width: 100%;
     box-shadow: 3px 3px 3px grey;
     text-align: right;
-    padding: 5px;
+    padding: 10px;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -76,12 +78,14 @@
 #lista-d {
     grid-area: listad;
     font-size: 2em;
+    padding: 10px;
 }
 #img-d {
     grid-area: imgd;
     height: auto;
     width: 100%;
     border-radius: 15% 15% 15% 0;
+    margin: 10px;
 }
 #titulo-flia {
     @extend #titulo-d;
@@ -91,12 +95,14 @@
 #lista-flia {
     grid-area: listaf;
     font-size: 2em;
+    padding: 10px;
 }
 #img-f {
     grid-area: imgf;
     height: auto;
     width: 100%;
-    border-radius: 15% 0 15% 15%
+    border-radius: 15% 0 15% 15%;
+    margin: 10px;
 }
 .nosotros-card {
     box-shadow: 5px 5px 3px grey;
@@ -143,10 +149,34 @@
 }
 
 .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
     padding: 5px;
     margin: 10px 5px 5px 5px;
     background: linear-gradient(to bottom, #25e2d5, #14f070);
     border-radius: 0 25px 25px 25px;
+    gap: 10px;
+    font-family: $fuente-titulo;
+    color: white;
+    text-shadow: 3px 3px 3px gray;
+    font-weight: 500;
+    align-items: center;
+    justify-items: center;
+    .btn-form{
+        background-color: #25e2d5;
+        color: white;
+        font-family: $fuente-titulo;
+        border-radius: 5px;
+        border: none;
+        padding: 15px 20px;
+        box-shadow: 3px 3px 3px gray;
+        &:hover{
+            background-color: blue;
+        }
+
+    }
 }
 .titulo-formulario {
     margin: 20px;
@@ -156,4 +186,23 @@
     border-radius: 25px 25px 25px 0;
     box-shadow: 3px 3px 3px grey;
 
+}
+.texto-form{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.pregunta{
+    font-family: $fuente-titulo;
+    font-weight: 700;
+    color:rgb(63, 61, 61);
+}
+.respuesta{
+    font-family: $fuente-titulo;
+    font-weight: 500;
+    color: rgb(63, 61, 61);
 }

@@ -50,55 +50,32 @@
   <div class="portada-main">
     <img class="img-main" src="../assets/portada contacto.png" alt="familia feliz">
     <h2 class="texto-main">Conocé más sobre nuestra propuesta!</h2>
-    <p class="parrafo-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore possimus sit qui? Quas accusantium vitae, atque reiciendis impedit aliquam possimus dolorem quaerat, sit odit, blanditiis inventore doloremque soluta porro.</p>
-    <iframe class="multimedia-main" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.1886418285344!2d-58.83335158543218!3d-27.463385923008456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca7afe67105%3A0x3b37bc7a583c1f52!2sSan%20Lorenzo%20495%2C%20W3400%20CFD%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1661804467310!5m2!1ses-419!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="parrafo-main">Puedes mejorar la calidad de vida de tu familia, para el presente y sobre todo para el futuro de tus hijos aplicando <strong>Disciplina Positiva</strong>. Puedes tomar nuestros cursosy talleres y ser parte de esta comunidad, si quieres conocer herramientas que te ayuden en cómo educar a tus hijos y lograr que cumplan con los límites y las normas de una manera amable y respetuosa. Comienza hoy desde donde estés con <strong>clases 100% online.</strong> </p>
+    <img class="multimedia-main" src="../assets/ilustracion-familia-contacto.jpeg" alt="familia feliz">
 </div>
 <div class="titulo-formulario">
   <h2>Te gustaría saber más? Dejanos tus datos!</h2>
 </div>
 
-<form class="row g-3 formulario">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Nro de Celular</label>
-    <input type="text" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Dirección</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Calle, Nº, Barrio">
-  </div>
-  <select class="form-select" aria-label="Default select example">
-    <option selected>Que curso te interesa?</option>
-    <option value="1">Primera infancia para docentes</option>
-    <option value="2">Adolescencia para docentes</option>
-    <option value="3">Primera infancia para famlias</option>
-    <option value="4">Adolescencia para famlias</option>
-  </select>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">Ciudad</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">País</label>
-    <select id="inputState" class="form-select">
-      <option selected>Bolivia</option>
-      <option>Argentina</option>
-      <option>Chile</option>
-      <option>Uruguay</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Código Postal</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
+<form class="formulario" action="https://formspree.io/f/xqkjbzvj" method="post" target="_blank">
+  <label class="texto-form">
+    Nombre y Apellido:
+    <input class="texto-form" type="text" name="name" placeholder="Nombre y Apellido">
+  </label>
+  <label class="texto-form">
+    E-mail:
+    <input class="texto-form" type="email" name="email" placeholder="email">
+  </label>
+  <label class="texto-form">
+    Nro de Celular:
+    <input type="text" name="celular" class="texto-form" placeholder="Nro de celular">
+  </label>
+  <label class="texto-form">
+    Dejanos tu mensaje:
+    <textarea class="texto-form" name="message"></textarea>
+  </label>
   
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </div>
+  <button class="btn-form" type="submit">Enviar</button>
 </form>
 
 </main>

@@ -12,6 +12,10 @@ footer{
         .icono {
             padding-right: 2%;
             color: white;
+            &:hover{
+                color: blue;
+                font-size: 1.2em;
+            }
         }
         
     }
